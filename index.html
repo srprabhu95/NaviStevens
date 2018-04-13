@@ -8,13 +8,15 @@
   </head>
 
   <body>
+    <div class="bgimage"></div>
+
 
     <nav class="navbar navbar-expand-lg navbar-light badge-dark">
       <a class="navbar-brand" href="#" id="navi">NAVI-STEVENS</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse container-fluid" id="navbarNav">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -27,20 +29,25 @@
         </li>
         </ul>
       </div>
-        <form class="navbar-form pull-right panel-menu">
-          <div class="form-group container-fluid">
+        <form class="navbar-form">
+          <div class="form-group">
+            <ul class="nav navbar-nav">
+            <li class="nav-item pad">
               <input  type="search" class="form-control" id="myInput" onkeyup="myFunction()" placeholder="Search.." title="Type in a name">
-              </div>
+            </li>
+            <li class="nav-item">
               <button type="submit" class="btn btn-danger btn-sm">Search</button>
-
+            </li>
+          </ul>
+              </div>
         </form>
 
     </nav>
 
 
-      <div class="conainer" style="display: inline-block;">
+      <div style="display: inline-block;">
         <br>
-
+          <div class="transbox2">
             <strong>FROM: </strong>
             <select class="form-control" id="start">
               <option onclick="getLocation()" value="lat,long">My Location</option>
@@ -82,8 +89,8 @@
             </select>
 
 
-            <input class="btn btn-success" type="button" value="Clear" onClick="window.location.reload()">
-
+            <input class="btn btn-success bttn" type="button" value="Clear" onClick="window.location.reload()">
+            </div>
 
             <div style="margin-left:3%">
             <ul id="myUL" style="position: relative;left: 180%;text-align:left;">
