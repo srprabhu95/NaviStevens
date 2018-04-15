@@ -36,7 +36,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#" id="navi">&copy; NAVI-STEVENS</a>
+      <a class="navbar-brand" href="index.html" id="navi">&copy; NAVI-STEVENS</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -54,20 +54,20 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle my-tooltip" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title='Click to see the available locations'>Locations</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="Altorfer.html">Altorfer Building</a>
-                    <a class="dropdown-item" href="ATC.html">Athletic Center</a>
-                    <a class="dropdown-item" href="Babbio.html">Babbio Center</a>
-                    <a class="dropdown-item" href="Burchard.html">Burchard Building</a>
+                    <a class="dropdown-item" href="altorfer.html">Altorfer Building</a>
+                    <a class="dropdown-item" href="atc.html">Athletic Center</a>
+                    <a class="dropdown-item" href="babbio.html">Babbio Center</a>
+                    <a class="dropdown-item" href="burchard.html">Burchard Building</a>
                     <a class="dropdown-item" href="carnegie.html">Carnegie Laboratory</a>
                     <a class="dropdown-item" href="debaun.html">Debaun Auditorium</a>
-                    <a class="dropdown-item" href="Edwin.html">Edwin Hall</a>
+                    <a class="dropdown-item" href="edwin.html">Edwin A. Stevens Hall</a>
                     <a class="dropdown-item" href="elevator.html">Elevator</a>
-                    <a class="dropdown-item" href="Hoboken.html">Hoboken Terminal</a>
-                    <a class="dropdown-item" href="Howe.html">Howe Center</a>
-                    <a class="dropdown-item" href="Jacobus.html">Jacobus Center</a>
+                    <a class="dropdown-item" href="hoboken.html">Hoboken Terminal</a>
+                    <a class="dropdown-item" href="howe.html">Howe Center</a>
+                    <a class="dropdown-item" href="jacobus.html">Jacobus Center</a>
                     <a class="dropdown-item" href="kidde.html">Kidde Complex</a> 
-                    <a class="dropdown-item" href="Library.html">Library</a>
-                    <a class="dropdown-item" href="Mclean.html">Mclean Hall</a>
+                    <a class="dropdown-item" href="library.html">Library</a>
+                    <a class="dropdown-item" href="mclean.html">Mclean Hall</a>
                     <a class="dropdown-item" href="morton.html">Morton Complex</a>            
                     <a class="dropdown-item" href="north.html">North Building</a>
                     <a class="dropdown-item" href="pierce.html">Pierce Complex</a>
@@ -76,19 +76,62 @@
                 </div>
             </li>
         </ul>
-        <ul class="navbar-nav ml-auto">
-            <li class='nav-item'>
-                    <input class="form-control my-sm-2" type="text" id="myInput" placeholder="Search.." aria-label="Search" data-toggle='tooltip' title='Enter a building code eg. BC-321'/>
-            </li>
-            <li class='nav-item'>
-                  <button class="form-control btn btn-primary my-2" type='button' role='button' onclick='searcher()'>Search</button>
-            </li>
-        </ul>
       </div> 
     </nav>
-    <p class="lead">
-  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
-</p>
+    <div class='container'>
+        <h1 class='display-4'>About us</h1>
+        <hr>
+        <p class="lead">
+            NaviStevens is a project developed and maintained by students of the course CS 545 (which is awesome btw). Along with the added bonus of securing a good grade, we hope that it will prove useful to hundreds of students.
+            <br><br>
+            NaviStevens is especially concerned with easing the life of new students and visitors, who struggle to find their bearings on campus; an unpleasant experience we all have personally gone through.
+            <br><br>
+            The cryptic class codes and semi-hidden buildings also support the need and existence for such an app. Class codes are searchable and all the buildings appear on the map for easy identification. 
+            <br><br>
+            <b>What we are working on-</b>
+        </p>
+            <ul>
+                <li>
+                    Integrating the Stevens shuttle service and office roster  
+                </li>
+                <li>
+                    Personalized recommendations based on student schedules (eg. Dinner on @ Pierce..hurry!)
+                </li>
+                <li>
+                    Events based on your school/Google calendar (IEEE meeting, conference at DeBaun)
+                </li>
+            </ul>
+        <p class='lead'>
+            We are always looking for new ideas so feel free to drop us some on the contact page. We hope this app helps you mitigate atleast one of the 99 problems you face when admitted to Stevens. Good luck for the year!
+        </p>
+        <hr>
+    </div>
+    <div class='container'>
+        <h1 class='display-5'>The Team</h1>
+        <br>
+        <div class='row'>
+            <div class='col'>
+                <img src='images/aubhik.jpg'>
+                <h4 align='center'>Aubhik Mazumdar</h4>
+                <h5 align='center'>amazumda@stevens.edu</h4>
+            </div>
+            <div class='col'>
+                <img src='siddhesh.jpg'>
+                <h4 align='center'>Siddhesh Prabhu</h4>
+                <h5 align='center'>sprabhu@stevens.edu</h4>
+            </div>
+            <div class='col'>
+                <img src='prateek.jpg'>
+                <h4 align='center'>Prateek Menon(Patrick)</h4>
+                <h5 align='center'>pmenon@stevens.edu</h4>
+            </div>
+            <div class='col'>
+                <img src='vidya.jpg'>
+                <h4 align='center'>Vidya Polaki </h4>
+                <h5 align='center'>vpolaki@stevens.edu</h4>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
