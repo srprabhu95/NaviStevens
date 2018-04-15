@@ -54,26 +54,30 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle my-tooltip" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title='Click to see the available locations'>Locations</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="Howe.html">Howe Center</a>
-                    <a class="dropdown-item" href="Jacobus.html">Jacobus Center</a>
-                    <a class="dropdown-item" href="Bowling.html">Bowling</a>   
                     <a class="dropdown-item" href="ATC.html">Athletic Center</a>
+                    <a class="dropdown-item" href="Altorfer.html">Altorfer Building</a>
                     <a class="dropdown-item" href="Babbio.html">Babbio Center</a>
                     <a class="dropdown-item" href="Burchard.html">Burchard Building</a>
+                    <a class="dropdown-item" href="carnegie.html">Carnegie Hall</a>
                     <a class="dropdown-item" href="Edwin.html">Edwin Hall</a>
+                    <a class="dropdown-item" href="elevator.html">Elevator</a>
                     <a class="dropdown-item" href="Howe.html">Howe Center</a>
+                    <a class="dropdown-item" href="Hoboken.html">Hoboken Terminal</a>
                     <a class="dropdown-item" href="Jacobus.html">Jacobus Center</a>
+                    <a class="dropdown-item" href="kidde.html">Kidde Complex</a> 
                     <a class="dropdown-item" href="Library.html">Library</a>
-                    <a class="dropdown-item" href="Mclean.html">Mclean Hall</a>            
+                    <a class="dropdown-item" href="morton.html">Morton Complex</a>            
+                    <a class="dropdown-item" href="Mclean.html">Mclean Hall</a>
+                    <a class="dropdown-item" href="pierce.html">Pierce Complex</a>            
                 </div>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
             <li class='nav-item'>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control my-sm-2" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" aria-label="Search" data-toggle='tooltip' title='Enter a building code'>
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick='searcher()'>Search</button>
-                </form>
+                    <input class="form-control my-sm-2" type="text" id="myInput" placeholder="Search" aria-label="Search" data-toggle='tooltip' title='Enter a building code eg. BC-321'>
+            </li>
+            <li class='nav-item'>
+                  <button class="form-control btn btn-primary my-2" type='button' role='button' onclick='searcher()'>Search</button>
             </li>
         </ul>
       </div> 
@@ -85,20 +89,24 @@
                 <div class='col-sm-4'>
                     <select class="form-control" data-toggle="tooltip" title="Choose your starting location" id="start" name='starter'>
                       <option selected hidden>FROM</option>
-                      <option value="lat,long">My Location</option>
+                      <option value="lat,long" id='myLoc'>My Location</option>
+                      <option value='40.74356309999999,-74.02702320000003'>Altorfer Building</option>
                       <option value="40.744160,-74.025583">Athletic Center</option>
                       <option value="40.742735,-74.026809">Babbio Center(Front)</option>
                       <option value="40.742897,-74.026379">Babbio Center(Side)</option>
                       <option value="40.742852,-74.027262">Burchard Building</option>
+                      <option value='40.7428696,-74.0278391'>Carnegie Laboratory</option>
                       <option value="40.742247,-74.027779">DeBaun Auditorium</option>
                       <option value="40.742343,-74.027418">Edwin Hall</option>
+                      <option value='40.7479687,-74.0383721'>Elevator</option>
+                      <option value="40.735588,-74.02911">Hoboken Terminal</option>
                       <option value="40.745026,-74.024154">Howe Center</option>
-                      <option value="40.744270,-74.024730">Jaobus Student Center</option>
-                      <option value="40.743726,-74.026412">Kiddie Complex</option>
+                      <option value="40.744270,-74.024730">Jacobus Student Center</option>
+                      <option value="40.7436467,-74.02644980000002">Kidde Complex</option>
                       <option value="40.744643,-74.025193">Library</option>
                       <option value="40.742310,-74.027159">McLean Hall</option>
-                      <option value="40.743149,-74.026375">Morton Complex</option>
-                      <option value="40.743428,-74.026561">Peirce Complex</option>
+                      <option value="40.7431894,-74.026637">Morton Complex</option>
+                      <option value="40.743428,-74.026561">Pierce Complex</option>
                       <option value="40.743943,-74.026189">Stevens Ground</option>
                       <option value="40.743683,-74.025858">Walker Gymnasium</option>
                     </select>
@@ -106,19 +114,23 @@
                 <div class='col-sm-4'>
                     <select class="form-control mb-2 mr-sm-2" data-toggle="tooltip" title="Choose your destination" id="end" name='ender'>
                       <option selected hidden>TO</option>
+                      <option value='40.74356309999999,-74.02702320000003'>Altorfer Building</option>
                       <option value="40.744160,-74.025583">Athletic Center</option>
                       <option value="40.742735,-74.026809">Babbio Center(Front)</option>
                       <option value="40.742897,-74.026379">Babbio Center(Side)</option>
                       <option value="40.742852,-74.027262">Burchard Building</option>
+                      <option value='40.7428696,-74.0278391'>Carnegie Laboratory</option>
                       <option value="40.742247,-74.027779">DeBaun Auditorium</option>
+                      <option value='40.7479687,-74.0383721'>Elevator</option>
                       <option value="40.742343,-74.027418">Edwin Hall</option>
+                      <option value="40.735588,-74.02911">Hoboken Terminal</option>
                       <option value="40.745026,-74.024154">Howe Center</option>
-                      <option value="40.744270,-74.024730">Jaobus Student Center</option>
-                      <option value="40.743726,-74.026412">Kiddie Complex</option>
+                      <option value="40.744270,-74.024730">Jacobus Student Center</option>
+                      <option value="40.7436467,-74.02644980000002">Kidde Complex</option>
                       <option value="40.744643,-74.025193">Library</option>
                       <option value="40.742310,-74.027159">McLean Hall</option>
-                      <option value="40.743149,-74.026375">Morton Complex</option>
-                      <option value="40.743428,-74.026561">Peirce Complex</option>
+                      <option value="40.7431894,-74.026637">Morton Complex</option>
+                      <option value="40.743428,-74.026561">Pierce Complex</option>
                       <option value="40.743943,-74.026189">Stevens Ground</option>
                       <option value="40.743683,-74.025858">Walker Gymnasium</option>
                     </select>
@@ -162,7 +174,72 @@
           }
 
           function searcher(){
-
+            var codes={
+              'A-501':'Altorfer Building',
+              'B-118':'Burchard Building',
+              'B-430':'Burchard Building',
+              'B-514':'Burchard Building',
+              'B-714':'Burchard Building',
+              'B-715':'Burchard Building',
+              'BC-104':'Babbio Center',
+              'BC-110':'Babbio Center',
+              'BC-122':'Babbio Center',
+              'BC-202':'Babbio Center',
+              'BC-203':'Babbio Center',
+              'BC-204':'Babbio Center',
+              'BC-210':'Babbio Center',
+              'BC-219':'Babbio Center',
+              'BC-220':'Babbio Center',
+              'BC-221':'Babbio Center',
+              'BC-304':'Babbio Center',
+              'BC-310':'Babbio Center',
+              'BC-319':'Babbio Center',
+              'BC-320':'Babbio Center',
+              'BC-321':'Babbio Center',
+              'C-315':'Carnegie Laboratory',
+              'C-316':'Carnegie Laboratory',
+              'E-130':'Edwin Hall',
+              'E-222':'Edwin Hall',
+              'E-229':'Edwin Hall',
+              'E-229A':'Edwin Hall',
+              'E-230':'Edwin Hall',
+              'E-231':'Edwin Hall',
+              'E-329':'Edwin Hall',
+              'E-330':'Edwin Hall',
+              'K-228':'Kidde Building',
+              'K-360':'Kidde Building',
+              'K-390':'Kidde Building',
+              'M-101':'Morton Building',
+              'M-102':'Morton Building',
+              'M-103':'Morton Building',
+              'M-105':'Morton Building',
+              'M-205':'Morton Building',
+              'M-324':'Morton Building',
+              'NB-101':'North Building',
+              'NB-102':'North Building',
+              'NB-105':'North Building',
+              'P-116':'Pierce Building',
+              'P-120':'Pierce Building',
+              'P-216':'Pierce Building',
+              'P-218':'Pierce Building',
+              'P-220':'Pierce Building',
+              'X-104':'McLean Hall',
+              'X-105':'McLean Hall',
+              'X-106':'McLean Hall',
+              'X-119':'McLean Hall',
+              'X-218A':'McLean Hall',
+              'X-218B':'McLean Hall',
+              'X-414':'McLean Hall',
+            }
+            var val = document.getElementById('myInput').value;
+            var result = codes[val.toString()];
+            let parent= document.getElementById('myInput');
+            if(result){
+              parent.value = result;
+            }
+            else{
+                parent.value = 'Not Found';
+            }
           }
 
           
@@ -211,8 +288,10 @@
           	content:'Your Location',
           	icon:'blue_MarkerU.png'
         	   });
+            document.getElementById('myLoc').value=pos.lat.toString() + ',' + pos.lng.toString();
             var onChangeHandler = function() {
-              calculateAndDisplayRoute(directionsService, directionsDisplay);
+              if(document.getElementById('start').value!='FROM' && document.getElementById('end').value!='TO')
+                calculateAndDisplayRoute(directionsService, directionsDisplay);
             };
               document.getElementById('start').addEventListener('change', onChangeHandler);
               document.getElementById('end').addEventListener('change', onChangeHandler);
@@ -220,12 +299,24 @@
          // Array of markers
             var markers = [
               {
+                coords:{lat:40.74356309999999,lng:-74.02702320000003},
+                content:'<h3><a href="Altorfer.html">Altorfer Building</a></h3>'
+              },
+              {
+                coords:{lat:40.7428696,lng:-74.0278391},
+                content:'<h3><a href="carnegie.html">Carnegie Laboratory</a></h3>'
+              },
+              {
                 coords:{lat:40.744780,lng:-74.023909},
                 content:'<h3><a href="Howe.html">Howe Center</a></h3><img src="../images/Howe.jpg" style="  display: block;margin-left: auto;margin-right: auto;width:40px;height:60px;"> '
               },
               {
                 coords:{lat:40.744808,lng:-74.025330},
                 content:'<h3><a href="Library.html">Library</a></h3>'
+              },
+              {
+                coords:{lat:40.7436467,lng:-74.02644980000002},
+                content:'<h3><a href="Kidde.html">Kidde Complex</a></h3>'
               },
               {
                 coords:{lat:40.744153,lng:-74.025669},
@@ -236,8 +327,16 @@
                 content:'<h3><a href="Babbio.html">Babbio Center</a></h3>'
               },
               {
+                coords:{lat:40.7479687,lng:-74.0383721},
+                content:'<h3><a href="elevator.html">Elevator</a></h3>'
+              },
+              {
                 coords:{lat:40.742339,lng:-74.027507},
                 content:'<h3><a href="Edwin.html">Edwin Hall</a></h3>'
+              },
+              {
+                coords:{lat:40.7431894,lng:-74.026637},
+                content:'<h3><a href="morton.html">Morton Complex</a></h3>'
               },
               {
                 coords:{lat:40.744132,lng:-74.024700},
@@ -248,8 +347,16 @@
                 content:'<h3><a href="Burchard.html">Burchard Building</a></h3>'
               },
               {
+                coords:{lat:40.742339,lng:-74.027507},
+                content:'<h3><a href="Pierce.html">Pierce Building</a></h3>'
+              },
+              {
                 coords:{lat:40.742247,lng:-74.026937},
                 content:'<h3><a href="Mclean.html">Mclean Hall</a></h3>'
+              },
+              {
+                coords:{lat:40.735588,lng:-74.02911},
+                content:'<h3><a href="hoboken.html">Hoboken Terminal</a></h3>'
               }
 
             ];
